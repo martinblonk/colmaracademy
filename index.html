@@ -2,15 +2,209 @@
 <!-- html for Colmar Academy website -->
 <!-- Author: Martin Blonk -->
 <!-- Project: Codecademy Pro Intensive: Build Websites from Scratch -->
+<!-- August 2017 -->
 
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Colmar Academy</title>
+    <title>Colmar Academy DEV</title>
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet"  />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet" />
   </head>
   <body>
 
+    <!-- Header -->
+    <header>
+      <nav class="menu flex">
+        <div class="logo flex">
+          <a href="index.html"><img class="logo" src="./resources/images/ic-logo.svg" /></a>
+          <a href="index.html"><span class="bold">COLMAR</span>ACADEMY</a>
+        </div>
+        <ul class="desktop flex">
+          <li><a href="#">On campus</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Online</a></li> s
+          <li class="divider"></li>
+          <li><a href="#">For companies</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+        <ul class="mobile">
+          <li><a href="#"><img src="./resources/images/ic-logo.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg" /></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Content part -->
+    <div class="main-content">
+
+      <!-- First content box -->
+      <div class="content-box-1 flex">
+        <img id="image-banner" src="./resources/images/banner.jpg" />
+
+        <div id="text-banner" class="flex">
+          <h1>Learn something new everyday</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+          <div class="button-start">
+            <h3><a href="#">Start here</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second content box -->
+      <div class="content-box-2 flex">
+        <div id="cb2-column-1" class="flex">
+          <img id="image-info" src="./resources/images/information-main.jpg" />
+            <h2>It doesn't hurt to keep practicing</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quae forte-possumus. Huius ego nunc auctoritatem sequens idem faciam. Refert tamen, quo modo. Eadem fortitudinis ratio reperietur."</p>
+          <span class="info-footer">Emanuel, Sr Strategist at Hiring.com</span>
+        </div>
+
+        <div id="cb2-column-2" class="flex">
+          <div class="info-bite flex">
+            <div class="info-image-container">
+              <img class="desktop" src="./resources/images/information-orientation.jpg" />
+            </div>
+            <div class="info-bite-content">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <br />
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info-bite flex">
+            <div class="info-image-container">
+              <img class="desktop" src="./resources/images/information-campus.jpg" />
+            </div>
+            <div class="info-bite-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <br />
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info-bite flex">
+            <div class="info-image-container">
+              <img class="desktop" src="./resources/images/information-guest-lecture.jpg" />
+            </div>
+            <div class="info-bite-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <br />
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third contentbox -->
+      <div class="content-box-3 flex">
+        <div id="cb3-header">
+          <h2>Start learning</h2>
+        </div>
+
+        <div class="courses flex">
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-software.jpg" />
+            <h3 class="course-category">Software engineering</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>Web Development, Mobile Development, iOT, API's</p>
+            </div>
+          </div>
+
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-computer-art.jpg" />
+            <h3 class="course-category">Computer art</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>Imaging & design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
+          </div>
+
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-design.jpg" />
+            <h3 class="course-category">Design</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-data.jpg" />
+            <h3 class="course-category">Data</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </div>
+
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-business.jpg" />
+            <h3 class="course-category">Business</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+
+          <div class="course">
+            <img class="desktop" src="./resources/images/course-marketing.jpg" />
+            <h3 class="course-category">Marketing</h3>
+            <div class="desktop courses-info">
+              <span>COURSES</span>
+              <p>Analytics, COntent Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Thesis content -->
+      <div id="thesis-header">
+        <h2>Thesis Exhibit</h2>
+      </div>
+      <div class="content-box-4 flex">
+        <div id="cb4-column-1" class="flex">
+          <video controls autoplay>
+            <source src="./resources/videos/thesis.mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3>Reimagine Urban</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quae forte-possumus. Huius ego nunc auctoritatem sequens idem faciam. Refert tamen, quo modo. Eadem fortitudinis ratio reperietur."</p>
+        </div>
+
+        <div id="cb4-column-2" class="flex desktop">
+          <div class="thesis-info-bite flex">
+            <div class="info-image-container">
+              <img class="desktop" src="./resources/images/thesis-fisma.jpg" />
+            </div>
+            <div class="info-bite-content">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="thesis-info-bite flex">
+            <div class="info-image-container">
+              <img class="desktop" src="./resources/images/thesis-now-and-then.jpg" />
+            </div>
+            <div class="info-bite-content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>

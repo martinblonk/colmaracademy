@@ -1,0 +1,324 @@
+/** css for Colmar Academy website **/
+/** Author: Martin Blonk **/
+/** Project: Codecademy Pro Intensive: Build Websites from Scratch **/
+/** August 2017 **/
+
+/** Universal styles **/
+
+html {
+  /**font-family: 'Roboto', sans-serif;**/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+body {
+  color:inherit;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+
+/** Header styles **/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  height: 4rem;
+}
+
+header .menu {
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 4rem;
+}
+
+.logo {
+  align-items: center;
+  flex: 1;
+}
+
+.menu .desktop {
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.logotext {
+  font-size: 1.1rem;
+}
+
+.divider {
+  background-color: #99cccc;
+  height: 4rem;
+  width: 1rem;
+}
+
+/** Main content styles **/
+.main-content {
+  position: relative;
+  top: 4rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/** Content box 1 styles **/
+.content-box-1 {
+  background-color: #cccccc;
+  width: 100%;
+  align-items: center;
+}
+
+/**#image-banner {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}**/
+
+#text-banner {
+  width: 25%;
+  flex-direction: column;
+}
+#image-banner {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+#text-banner h1, p {
+  color: #444444;
+  }
+
+#text-banner h1 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+}
+
+#text-banner p {
+  font-size: 1.1rem;
+}
+
+.button-start {
+  background-color: #444444;
+  display: block;
+  color: white;
+  height: 2rem;
+  margin-top: 2rem;
+}
+
+.button-start h3 {
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.button-start a {
+    color: white;
+    display: block;
+}
+
+.button-start:hover {
+  opacity: 0.8;
+}
+
+/** Content box 2 styles **/
+.content-box-2 {
+
+}
+
+#cb2-column-1 {
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#cb2-column-1 img {
+  width: 100%;
+}
+
+.text-info {
+  padding-left: 1.5rem;
+  width: 60%;
+}
+#cb2-column-1 h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+#cb2-column-1 p {
+  font-size: 0.9rem;
+  color: #999999;
+  line-height: 1.4rem;
+}
+
+.info-footer {
+  font-size: 0.7rem;
+  padding-top: 2rem;
+}
+
+#cb2-column-2 {
+  width: 40%;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-left: 1px solid lightgray;
+}
+
+.info-bite-content {
+  width: 65%;
+  padding: 1rem;
+}
+
+.info-image-container {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+img.desktop {
+  max-width: 100%;
+}
+
+.info-bite {
+  align-items: center;
+  border: 1px solid lightgrey;
+  transition: background-color 300ms ease-in-out;
+}
+
+.info-bite-content h3 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.info-bite-content p {
+    font-size: 0.9rem;
+}
+
+.info-bite:hover {
+  background-color: #cccccc;
+}
+
+/** Content box 3 styles **/
+.content-box-3 {
+  flex-direction: column;
+  background-color: #cccccc;
+  padding: 2rem 4.5rem;
+}
+
+#cb3-header {
+  text-align: center;
+}
+
+#cb3-header h2 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.courses {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.course {
+  background-color: #fff;
+  width: 30%;
+  margin: 1rem;
+}
+
+.course:nth-child(4n) {
+  justify-content: flex-start;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+.course h3 {
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+
+.course-category {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.courses-info {
+  padding-left: 1rem;
+  text-align: left;
+  font-weight: 300;
+}
+
+.courses-info span {
+  padding-bottom: 0.5rem;
+  display: block;
+}
+
+.courses-info p {
+  display: block;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/** Thesis content styles **/
+
+#thesis-header {
+  text-align: center;
+  width: 100%;
+}
+#thesis-header h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#cb4-column-1 {
+  flex-direction: column;
+  width: 60%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+#cb4-column-1 video {
+  width: 100%;
+}
+
+#cb4-column-1 h3 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+#cb4-column-1 p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#cb4-column-2 {
+  width: 40%;
+  flex-direction: column;
+  /*padding-top: 1rem;*/
+}
+
+.thesis-info-bite {
+  align-items: center;
+  transition: background-color 300ms ease-in-out;
+}
